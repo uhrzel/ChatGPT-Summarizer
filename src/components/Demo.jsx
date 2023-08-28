@@ -47,7 +47,7 @@ const Demo = () => {
       {/*  search*/}
       <div className="flex flex-col w-full gap-2">
         <form
-          className=" relative flex justify-center items-center"
+          className="relative flex justify-center items-center"
           onSubmit={handleSumbit}
         >
           <img
