@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { copy, linkIcon, loader, tick } from '../assets';
-import React from 'react';
+
 import { useLazyGetSummaryQuery } from '../services/article';
-import { stringify } from 'postcss';
 
 const Demo = () => {
   const [article, setArticle] = useState({
@@ -11,7 +10,7 @@ const Demo = () => {
   });
 
   const [allArticles, setAllArticles] = useState([]);
-  const [copied, Copied] = useState("");
+  const [copied, Copied] = useState('');
 
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
@@ -40,8 +39,8 @@ const Demo = () => {
   const handleCopy = (copyUrl) => {
     setCopied(copyUrl);
     navigator.clipboard.writeText(copyUrl);
-    setTimeout(() => setCopied(false), 3000); 
-  }
+    setTimeout(() => setCopied(false), 3000);
+  };
   return (
     <section className="mt-16 w-full max-w-xl">
       {/*  search*/}
@@ -111,7 +110,10 @@ const Demo = () => {
                 Article <span className="blue_gradient">Summary</span>
               </h2>
               <div className="summary_box">
-                <p className='font-inter font-medium text-sm text-gray-700'> {article.summary}</p>
+                <p className="font-inter font-medium text-sm text-gray-700">
+                  {' '}
+                  {article.summary}
+                </p>
               </div>
             </div>
           )

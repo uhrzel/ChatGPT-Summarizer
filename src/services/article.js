@@ -25,5 +25,5 @@ export const articleApi = createApi({
         `/summarize?url=${encodeURIComponent(params.articleUrl)}&length=3`,
     }),
   }),
-});
-export const { useLazyGetSummaryQuery } = articleApi;
+})
+export const { useLazyGetSummaryQuery } = articleApi
