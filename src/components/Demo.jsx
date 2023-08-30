@@ -140,6 +140,10 @@ const Demo = () => {
           )
         )}
       </div>
+      <footer className="font-satoshi font-bold text-center py-4 text-gray-600 mt-20 object-obtain">
+        <hr className='border-t-2 ' />
+        uhrzel | ChaiGPT v.0.1 <br />
+      </footer>
     </section>
   );
 };

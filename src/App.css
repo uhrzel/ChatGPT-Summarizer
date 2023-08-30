@@ -28,7 +28,7 @@
 
 .main:after {
   content: '';
-  background-image: url('/src/assets/grid.svg');
+  background-color: gray;
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -70,7 +70,6 @@
 }
 
 /* Tailwind Styles */
-
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
@@ -84,7 +83,7 @@
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-teal-500 via-green-950 to-green-500 bg-clip-text text-transparent;
 }
 
 .desc {
