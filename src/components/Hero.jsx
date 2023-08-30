@@ -1,4 +1,4 @@
-import logo from '../assets/gptea1.png';
+import logo from '../assets/img.png';
 import React from 'react';
 const Hero = () => {
   return (
